@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.OMDB {
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
+nav {
+  position: fixed;
+  width: 97%;
+  display: flex;
+  /* justify-content:flex-end; */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(0, 165, 247);
+  padding: 1.5rem;
+}
+
+.links {
+  margin: 0rem 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.links:hover {
+  color: rgb(215, 215, 215);
+}
+
+.signup,
+.login {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  /* width: 30%; */
+  /* height: 40%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.box span {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form button {
+  display: inline;
+  font-weight: 600;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+  border: 1px solid rgba(200, 200, 200, 0.8);
+}
+
+form button {
+  background-color: rgb(0, 165, 247);
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: white;
+  color: rgb(0, 165, 247);
+  border: 1px solid rgb(0, 165, 247);
+}
+
+form input:focus {
+  outline: none;
+  border: 1px solid rgb(0, 165, 247);
+}
+
+/* Home CSS */
+
+.navback {
+  /* height: 9.3vh; */
+  height: 4.17rem;
+  width: 90vw;
+}
+
+.home {
+  height: 100%;
+  /* padding: 2rem; */
+  background-color: black;
+}
+
+.home span {
+  color: white;
+}
+
+.greeting {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.searchDesign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.searchbar {
+  margin: 0.5em 0rem;
+  padding: 0rem 1rem;
+  width: 60vw;
+  height: 5vh;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: white;
+}
+
+.searchbar:focus {
+  outline: none;
+  border: 1px solid rgb(0, 165, 247);
+}
+
+.searchbutton {
+  cursor: pointer;
+  background-color: rgb(0, 165, 247);
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0rem 1rem;
+  /* width: 7vw; */
+}
+
+.contentCard {
+  cursor: pointer;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.movieTitle {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.contentMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.infoBody {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  margin: 0rem 2rem;
+  padding: 0rem;
+  width: 100%;
+}
+
+.info h1,
+.info h3,
+.info h4 {
+  margin: 0.5rem;
+}
+
+.info h1 {
+  font-size: 4rem;
+}
+
+.info h3 {
+  font-weight: 300;
+}
+
+.plot {
+  /* color: rgb(0, 165, 247); */
+  margin: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem 0rem;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.description {
+  display: block;
+  /* color: rgb(0, 165, 247); */
+  margin-left: 0.5rem;
+  margin-top: 1.2rem;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.awards {
+  font-size: 1.6rem;
+  margin-top: 1rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.rating {
+  font-size: 1.5rem;
+  font-weight: 700 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem 2rem;
+}
+
+.Ratings {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BoxOffice {
+  font-size: 3rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.infoBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.infoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .greeting {
+    /* display: none; */
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    /* font-size: 2rem; */
+    text-align: center;
+  }
+
+  .searchbar{
+    width: 80%;
+  }
+
+
+  .OMDB {
+    margin: 0rem;
+    margin-bottom: 0.5rem;
+  }
+  nav {
+    width: 88vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links {
+    margin: 0rem 0.5rem;
+  }
+}
+
+.detailloader{
+  display: flex;
+  width: 20%;
+  height: 90vh;
+  margin: auto;
+}
+
+@media screen and (max-width: 1030px) {
+  .infoBody {
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    padding: 0rem;
+  }
+  .info {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .BoxOffice {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:625px) {
+  .Ratings{
+    flex-direction: column;
+  }
+
+  .rating{
+    margin: 0.5rem 0rem;
+  }
+  
+}
